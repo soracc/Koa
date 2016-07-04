@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title><%= g_title%></title>
+		
+		<meta name="keywords" content="<%= g_keywords%>" />
+		<meta name="description" content="<%= g_description%>" />
+		
+		<link rel="shortcut icon" type="image/x-icon" href="./img/common/icon/fav/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="./img/common/icon/fav/favicon.ico">
+		<link rel="shortcut" type="image/x-icon" href="./img/common/icon/fav/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta charset="UTF-8" />
+		
+		<% for(var i=0; i<g_css.length; i++){%>
+		<link rel="stylesheet" href="./css/<%= g_css[i]%>.css" />
+		<%}%>
+	</head>

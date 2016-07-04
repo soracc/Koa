@@ -1,0 +1,17 @@
+<% g_css = ['index','about'] %>
+<% g_title = "首页"%>
+<% g_keywords = "key" %>
+<% g_description = "descript" %>
+<% include ./include/header.html %>
+	<body>
+		
+		<h1>
+			<a href="./contact">contact</a>
+			<a href="./about">about</a>
+			Halo Sora
+			<% for(var i=0;i<10; i++){%>
+				<h2 class="blue"><%= i%>Sora</h2>
+			<%}%>
+		</h1>
+	</body>
+<% include ./include/footer.html %>
