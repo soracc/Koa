@@ -1,0 +1,17 @@
+<% g_css = ['404'] %>
+<% g_title = "首页"%>
+<% g_keywords = "key" %>
+<% g_description = "descript" %>
+<% include ./include/header.html %>
+	<body>
+		<div class="container">
+			<img src="./img/common/404.png">
+		</div>
+<% include ./include/footer.html %>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var height = $(window).height();
+		$(".container").css({"line-height":height+"px","height":height+"px"});
+		$(".container img").css("margin-top",(height-$(".container img").height())/2+"px");
+	});
+</script>
