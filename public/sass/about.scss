@@ -1,6 +1,127 @@
-h1{
-	color: #d23333;
-}
-h2{
-    color: blue;
+.main{
+	width:1200px;
+	margin:auto;
+	.left{
+		float:left;
+		width:20%;
+		text-align:center;
+		ul{
+			margin-top:100px;
+			li{
+				line-height:24px;
+				cursor:pointer;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	.right{
+		width:80%;
+		float:right;
+		.showing{
+			.photo{
+				float:left;
+				img{
+					width:400px;
+					height:auto;
+				}
+			}
+			.detail{
+				width:560px;
+				float:right;
+				text-align:center;
+				.title{
+					font-size:30px;
+					padding-top:30px;
+					margin-bottom:150px;
+				}
+				.specification{
+					.color{
+						display:inline-block;
+						li{
+							display:inline-block;
+							height:10px;
+							width:10px;
+							cursor:pointer;
+							margin: 0 3px;
+							&:hover{
+								transform:scale(2);
+								margin: 0 5px;
+							}
+						}
+						.black{
+							background-color:#000;
+						}
+						.blue{
+							background-color:#496284;
+						}
+						.red{
+							background-color:#943202;
+						}
+					}
+					select{
+						margin-left:20px;
+						width:40px;
+						line-height:30px;
+					}
+				}
+				.price{
+					height:50px;
+					line-height:50px;
+					color:#fff;
+					text-align:center;
+					margin: 30px auto;
+					span{
+						background-color:#7a99fb;
+						width:40%;
+						height:50px;
+						line-height:50px;
+						display:inline-block;
+						cursor:pointer;
+					}
+				}
+				.cart{
+					height:50px;
+					line-height:50px;
+					color:#333;
+					text-align:center;
+					margin: 30px auto;
+					span{
+						border:2px solid #333;
+						width:40%;
+						height:50px;
+						line-height:50px;
+						display:inline-block;
+						cursor:pointer;
+					}
+				}
+			}
+		}
+		.ralate{
+			padding-top:20px;
+			p{
+				font-size:30px;
+				line-height:60px;
+				font-weight:500;
+			}
+			.products{
+				display:flex;
+				display:-webkit-flex;
+				.item{
+					padding:10px;
+					text-align:center;
+					img{
+						width:100%;
+						height:auto;
+					}
+					p{
+						.name{
+							color:#504f4f;
+						}
+					}
+				}
+			}
+		}
+	}
 }

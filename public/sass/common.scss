@@ -1,0 +1,46 @@
+.header{
+	height:100px;
+	line-height:100px;
+	width:1200px;
+	margin:auto;
+	.logo{
+		float:left;
+		height:50px;
+		width:auto;
+		margin-top:25px;
+	}
+	nav{
+		float:right;
+		height:100px;
+		line-height:100px;
+		a{
+			text-decoration:none;
+			color:#333;
+			cont-size:14px;
+			display:inline-block;
+			margin-right:50px;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	input[name="search"]{
+		float:right;
+		font-size:12px;
+		margin-top:40px;
+		border-radius:20px;
+		padding: 3px 10px;
+		outline:none;
+		border:1px solid #999;
+		color:#666;
+	}
+}
+.my-cart{
+	width:1100px;
+	margin:0 auto 20px;
+	text-align:right;
+	background: url('../img/common/cart.png') no-repeat right center ;
+	padding-right:30px;
+	background-size:20px;
+	color:#666;
+}

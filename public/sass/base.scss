@@ -1,0 +1,55 @@
+@font-face{
+	font-family:'polaris';
+	src:url('../font/Polaris/Polaris.ttf');
+}
+@font-face{
+	font-family:'edelsans';
+	src:url('../font/edelsans_ultralight.otf');
+}
+@font-face{
+	font-family:'libre';
+	src:url('../font/LibreBaskerville-Regular.otf');
+}
+@font-face{
+	font-family:'rambla';
+	src:url('../font/Rambla-Regular.otf');
+}
+@font-face{
+	font-family:'riesling';
+	src:url('../font/riesling.ttf');
+}
+@font-face{
+	font-family:'drugs2';
+	src:url('../font/drugs2.otf');
+}
+@font-face{
+	font-family:'nordica';
+	src:url('../font/NordicaRegular.otf');
+}
+@font-face{
+	font-family:'RBNo2Light';
+	src:url('../font/RBNo2Light.otf');
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:'rambla','nordica';
+}
+h1{
+	color: #d23333;
+}
+h2{
+    color: #00abe4;
+}
+li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+.none{
+	display:none;
+}
