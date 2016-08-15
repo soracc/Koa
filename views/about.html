@@ -1,12 +1,88 @@
-<html>
-	<head>
-		<title>test</title>
-	</head>
-	<body>
-		<h1>
+<% g_css = ['index','about'] %>
+<% g_title = "首页"%>
+<% g_keywords = "key" %>
+<% g_description = "descript" %>
+<% include ./include/header.html %>
+		<!-- <h1>
 			<a href="./contact">contact</a>
 			<a href="./index">index</a>
 			About Us
-		</h1>
+		</h1> -->
+		<div class="main">
+			<div class="left">
+				<ul>
+					<li>Jackets</li>
+					<li>Skirts</li>
+					<li>Shoes</li>
+					<li>T-shirts</li>
+					<li>Shirts</li>
+					<li>Jeans</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="showing">
+					<div class="photo">
+						<img src="./img/index/Layer-5.png">
+					</div>
+					<div class="detail">
+						<p class="title">BLUE PANTS</p>
+						<div class="specification">
+							<ul class="color">
+								<li class="black"></li>
+								<li class="blue"></li>
+								<li class="red"></li>
+							</ul>
+							<select>
+								<option>1</option>
+							</select>
+						</div>
+						<p class="price">
+							<span>BUY NOW 29.99$</span>
+						</p>
+						<p class="cart">
+							<span>add to the shopping car</span>
+						</p>
+					</div>
+				</div>
+				<div class="ralate clear">
+					<p>Related Items:</p>
+					<ul class="products">
+						<li class="item">
+							<img src="./img/index/Layer-10.png">
+							<p>
+								<span class="name">
+									shoe
+								</span>
+								<span>
+									15.99$
+								</span>
+							</p>
+						</li>
+						<li class="item">
+							<img src="./img/index/Layer-11.png">
+							<p>
+								<span class="name">
+									bag
+								</span>
+								<span>
+									35.99$
+								</span>
+							</p>
+						</li>
+						<li class="item">
+							<img src="./img/index/Layer-12.png">
+							<p>
+								<span class="name">
+									bag
+								</span>
+								<span>
+									35.99$
+								</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
