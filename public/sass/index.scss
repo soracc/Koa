@@ -1,70 +1,33 @@
-@font-face{
-	font-family:'polaris';
-	src:url('../font/Polaris/Polaris.ttf');
-}
-@font-face{
-	font-family:'edelsans';
-	src:url('../font/edelsans_ultralight.otf');
-}
-@font-face{
-	font-family:'libre';
-	src:url('../font/LibreBaskerville-Regular.otf');
-}
-@font-face{
-	font-family:'rambla';
-	src:url('../font/Rambla-Regular.otf');
-}
-@font-face{
-	font-family:'riesling';
-	src:url('../font/riesling.ttf');
-}
-@font-face{
-	font-family:'drugs2';
-	src:url('../font/drugs2.otf');
-}
-@font-face{
-	font-family:'nordica';
-	src:url('../font/NordicaRegular.otf');
-}
-@font-face{
-	font-family:'RBNo2Light';
-	src:url('../font/RBNo2Light.otf');
-}
-h1{
-	color: #d23333;
-}
-h2{
-    color: #00abe4;
-}
-.font-area{
-	width:1000px;
-	margin:20px auto;
-	font-size:50px;
-	.title{
-		font-size:80px;
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 600px;
+	img{
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
 	}
-}
-.polaris{
-	font-family:'riesling';
-}
-.edelsans{
-	font-family:'edelsans';
-}
-.libre{
-	font-family:'libre';
-}
-.rambla{
-	font-family:'rambla';
-}
-.riesling{
-	font-family:'riesling';
-}
-.drugs2{
-	font-family:'drugs2';
-}
-.nordica{
-	font-family:'nordica';
-}
-.RBNo2Light{
-	font-family:'RBNo2Light';
+	.banner-slogan{
+		width: 1000px;
+		height: 600px;
+		margin: auto;
+		position: relative;
+		p{
+			color: #333;
+			font-size: 32px;
+			line-height: 50px;
+			font-family: 'libre';
+			position: absolute;
+			right: 0;
+		}
+		.banner-left{
+			bottom: 70px;
+		}
+		.banner-right{
+			bottom: 20px;
+		}
+	}
 }
