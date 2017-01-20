@@ -72,6 +72,6 @@ app.use(function*(){
 	this.body = "Halo Sora";
 });*/
 
-var server = app.listen(3000, function() {
+var server = app.listen(80, function() {
     console.log('Koa is listening to http://localhost:3000');
 });
