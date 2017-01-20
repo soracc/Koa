@@ -64,7 +64,9 @@
     "user-home": "^2.0.0",
     "vinyl": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  },
   "scripts": {
     "test": "node app.js"
   },

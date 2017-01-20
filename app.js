@@ -14,7 +14,11 @@ var path = require('path');
 var extname = path.extname;
 
 var views = require('co-view');
-var render = views('./views',{map:{html:'jsx'}});
+var render = views('./views', {
+    map: {
+        html: 'jsx'
+    }
+});
 var onerror = require('koa-onerror');
 var staticServer = require('koa-static');
 var render = require('koa-ejs');
@@ -22,21 +26,21 @@ var render = require('koa-ejs');
 
 var myrouter = new router();
 
-app.use(staticServer(path.join(__dirname,'public')));
+app.use(staticServer(path.join(__dirname, 'public')));
 
-render(app,{
-	root:path.join(__dirname,'views'),
-	layout:'__layout',
-	viewExt:'html',
-	cache:false,
-	debug:true
+render(app, {
+    root: path.join(__dirname, 'views'),
+    layout: '__layout',
+    viewExt: 'html',
+    cache: false,
+    debug: true
 });
 
-myrouter.get('/:name',function *(next){
-	console.log(this.params.name);
-	yield this.render(this.params.name,{layout:false});
-}).get('/',function *(next){
-	yield this.render('index',{layout:false});
+myrouter.get('/:name', function * (next) {
+    console.log(this.params.name);
+    yield this.render(this.params.name, {layout: false});
+}).get('/', function * (next) {
+    yield this.render('index', {layout: false});
 });
 
 app.use(myrouter.routes());
@@ -48,15 +52,14 @@ app.use(myrouter.routes());
     }else if(this.path==='/about'){
     	yield this.render('about',{layout:false});
     }
-	
-})*/
 
+})*/
 
 //log
 app.use(logger());
 
-app.on('error',function(err,ctx){
-	console.log(err);
+app.on('error', function(err, ctx) {
+    console.log(err);
 });
 
 onerror(app);
