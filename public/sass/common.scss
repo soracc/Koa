@@ -13,14 +13,41 @@
 		float:right;
 		height:100px;
 		line-height:100px;
-		a{
-			text-decoration:none;
-			color:#333;
-			font-size:16px;
+		.nav-item{
+			&>a{
+				text-decoration:none;
+				color:#333;
+				font-size:16px;
+			}
+			position: relative;
 			display:inline-block;
 			margin-right:30px;
 			&:hover{
 				text-decoration:underline;
+				.nav-list{
+					display: block;
+				}
+			}
+			.nav-list{
+				position: absolute;
+				width: 100%;
+				top: 70px;
+				left: 0;
+				display: none;
+				z-index: 1;
+				a{
+					display: block;
+					height: 30px;
+					line-height: 30px;
+					font-size: 18px;
+					text-align: center;
+					text-decoration: none;
+					color: #333;
+					width: 100%;
+					&:hover{
+						font-size: 40px;
+					}
+				}
 			}
 		}
 	}
