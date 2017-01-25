@@ -30,7 +30,7 @@
         top: 70px;
         left: 0;
         display: none;
-        z-index: 1; }
+        z-index: 3; }
         .header nav .nav-item .nav-list a {
           display: block;
           height: 30px;
